@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+    background-color: hsl(212, 45%, 89%);
+   
+}
+.content{
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 20%;
+    height: fit-content;
+    margin:auto;
+    background-color:  hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 5%;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+img{
+    max-width: 100%; /* Make sure the image does not exceed the container's width */
+    max-height: 100%; /* Make sure the image does not exceed the container's height */
+    display: block; /* Remove any extra spacing below the image */
+    margin: auto; /* Center the image horizontally within the container */
+    border-radius:5% ;
+    float: top;
+    
+}
+.description{
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+    color: hsl(220, 15%, 55%);
+    font-weight: 100;
+}
+.bold{
+    color: hsl(218, 44%, 22%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.attribution{
+    display: flexbox;
+    flex-direction: row;
+    width:fit-content;
+    height: fit-content;
+    font-size: 11px; 
+    text-align: center; 
+    font-weight: 200;
+    padding: 5%;
+    margin: auto;
+    color: hsl(220, 15%, 55%);
+}
+/* For mobile styles */
+@media (max-width: 425px) and (max-height: 667px) {
+
+    .content{
+        width: 80%;
+        height: fit-content;
+        min-height: 66.66%;
+    }
+}
